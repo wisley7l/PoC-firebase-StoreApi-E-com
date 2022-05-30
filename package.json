@@ -1,0 +1,25 @@
+{
+  "name": "poc-firebase",
+  "version": "1.0.0",
+  "description": "PoC Firebase for Store API v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wisley7l/PoC-firebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wisley7l/PoC-firebase/issues"
+  },
+  "homepage": "https://github.com/wisley7l/PoC-firebase#readme",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "nodemon": "^2.0.16",
+    "sucrase": "^3.21.0",
+    "typescript": "^4.7.2"
+  }
+}
