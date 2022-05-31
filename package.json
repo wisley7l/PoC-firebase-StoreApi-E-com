@@ -9,7 +9,8 @@
     "build": "",
     "serve" :"bash scripts/serve.sh",
     "deploy" :"bash scripts/deploy.sh",
-    "fix" :"bash scripts/fix-lint.sh"
+    "fix" :"bash scripts/fix-lint.sh",
+    "init" :"bash scripts/init-firebase.sh"
   },
   "repository": {
     "type": "git",

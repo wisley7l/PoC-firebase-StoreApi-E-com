@@ -8,8 +8,8 @@ const axiosV2 = axios.create({
 });
 
 const request = async (url: string) =>{
-  const now = new Date().getTime();
   let response = null;
+  const now = new Date().getTime();
   try {
     response = (await axiosV2({method: "get", url})).data;
   } catch (e) {
@@ -44,9 +44,9 @@ const getStoreAllV2 = async () => {
     request(urlCategories),
     request(urlStore),
   ]);
+  const took: number = (new Date().getTime() - now);
   const url: Array<string> = [];
   const response: Array<object> = [];
-  const took: number = (new Date().getTime() - now);
   result.forEach(
       (request) => {
         url.push(request.url);

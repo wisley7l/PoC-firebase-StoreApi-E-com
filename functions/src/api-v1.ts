@@ -57,8 +57,8 @@ const checkToken = async () => {
 
 const request = async (url: string) => {
   const headers = headerApiV1(storeId, true);
-  const now = new Date().getTime();
   let response = null;
+  const now = new Date().getTime();
   try {
     response = (await axiosV1({method: "get", url, headers})).data;
   } catch (e) {
@@ -97,9 +97,9 @@ const getStoreAllV1 = async () => {
     request(urlCategories),
     request(urlStore),
   ]);
+  const took: number = (new Date().getTime() - now);
   const url: Array<string> = [];
   const response: Array<object> = [];
-  const took: number = (new Date().getTime() - now);
   result.forEach(
       (request) => {
         url.push(request.url);
